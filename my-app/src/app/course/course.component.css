@@ -8,6 +8,10 @@
     padding: 10px 20px;
 }
 
+.text-color-btn {
+    color: black;
+}
+
 @media screen and (max-width:600px) {
     .course {
         background-color: #eff6ff;

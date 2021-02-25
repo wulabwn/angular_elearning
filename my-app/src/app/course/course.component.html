@@ -6,6 +6,8 @@
             <div class="col-lg-3 mb-5" *ngFor="let cs of pelajaran">
                 <div class="box shadow-sm">
                     <img src="{{cs.image}}" width="100%">
+                    <!-- <iframe width="420" height="345" src="{{cs.youtube}}">
+                        </iframe> -->
                     <h4 class="mt-2">
                         {{cs.name}}
                     </h4>
@@ -17,14 +19,21 @@
 
         </div>
 
+        <h1 class="text-center">All Books</h1>
+        <div class="row mt-5">
+            <div class="col-lg-3 mb-5" *ngFor="let item of buku">
+                <div class="box shadow-sm">
+                    <img src="{{item.image}}" width="100%">
+                    <h4 class="mt-2">
+                        {{item.name}}
+                    </h4>
+                    <p class="mt-2">{{item.description}}</p>
 
-        <!-- <ul>
-            <li *ngFor="let movie of Movies">
-                {{ movie.name }}
-            </li>
-        </ul> -->
-
+                    <button class="btn btn-primary btn-sm mt-2">
+                        <a class="text-color-btn" href="../../assets/buku_debian.pdf">Read more ..</a></button>
+                </div>
+            </div>
+        </div>
 
     </div>
-
 </section>
